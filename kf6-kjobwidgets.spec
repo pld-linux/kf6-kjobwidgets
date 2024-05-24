@@ -35,6 +35,7 @@ Requires:	Qt6Widgets >= %{qtver}
 Requires:	kf6-dirs
 Requires:	kf6-kcoreaddons >= %{version}
 Requires:	kf6-kwidgetsaddons >= %{version}
+Obsoletes:	kf5-%{kfname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		qt6dir		%{_libdir}/qt6
@@ -51,6 +52,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	Qt6Widgets-devel >= %{qtver}
 Requires:	cmake >= 3.16
 Requires:	kf6-kcoreaddons-devel >= %{version}
+Obsoletes:	kf5-%{kfname}-devel < %{version}
 
 %description devel
 Header files for %{kfname} development.
