@@ -45,6 +45,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KJobWIdgets provides widgets for showing progress of asynchronous
 jobs.
 
+%description -l pl.UTF-8
+KJobWidgets dostarcza widżetów do pokazywania postępu wykonywania
+asynchronicznych zadań.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
