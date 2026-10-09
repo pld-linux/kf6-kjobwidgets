@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.30
+%define		kdeframever	6.31
 %define		qtver		5.15.2
 %define		kfname		kjobwidgets
 
 Summary:	Widgets for showing progress of asynchronous jobs
 Name:		kf6-%{kfname}
-Version:	6.30.0
+Version:	6.31.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	65a84f5f39efcd4f5e416464b2fed476
+# Source0-md5:	0bed4aa16f4745a4e74e4c52f1edb5cc
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
